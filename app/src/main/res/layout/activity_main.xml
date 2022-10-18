@@ -16,7 +16,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.239"
-        app:srcCompat="@drawable/krajobraz" />
+        app:srcCompat="@drawable/krajobraz"
+        android:scaleY="1"
+        android:scaleX="1"
+        />
 
     <TextView
         android:id="@+id/textView"
@@ -85,8 +88,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Nasilenie niebieksiego"
+            android:text="Akceptuj Zmiany"
             android:onClick="ChangeTint"
             />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/poziomo"
+        android:onClick="flipX"
+        />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pionowo"
+        android:onClick="flipY"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
