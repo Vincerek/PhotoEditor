@@ -12,10 +12,10 @@
         android:layout_height="210dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.307"
+        app:layout_constraintVertical_bias="0.239"
         app:srcCompat="@drawable/krajobraz" />
 
     <TextView
@@ -40,52 +40,51 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <EditText
+            android:id="@+id/AlphaValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="2"
+            android:hint="Podaj wartość przezroczystości 0-255"
+            android:inputType="number"
+            />
+
+        <EditText
             android:id="@+id/RedValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
             android:layout_weight="2"
-            android:hint="Podaj wartość 0-255"
+            android:hint="Podaj wartość czerwonego 0-255"
             android:inputType="number"
             />
 
-        <Button
-            android:id="@+id/RedCommit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nasilenie czerwonego"
-            android:layout_weight="2"/>
         <EditText
             android:id="@+id/GreenValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
             android:layout_weight="2"
-            android:hint="Podaj wartość 0-255"
+            android:hint="Podaj wartość zielonego 0-255"
             android:inputType="number"
             />
 
-        <Button
-            android:id="@+id/GreenCommit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nasilenie zielonego"
-            android:layout_weight="2"/>
         <EditText
             android:id="@+id/BlueValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
-            android:hint="Podaj wartość 0-255"
+            android:hint="Podaj wartość niebieskiego 0-255"
             android:layout_weight="2"
             android:inputType="number"
+
             />
 
         <Button
             android:id="@+id/BlueCommit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:text="Nasilenie niebieksiego"
             android:onClick="ChangeTint"
             />
